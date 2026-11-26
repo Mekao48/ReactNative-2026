@@ -1,41 +1,59 @@
-import { Link, router } from "expo-router";
-import { Button, StyleSheet, Text, View, ScrollView } from "react-native";
+import { Link } from "expo-router";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
-    <ScrollView style ={{ flex: 1,}}>
-    <View style={styles.container}>
-      ...
-      <Text style={styles.title}>ข้อ 1 - 6</Text>
-      <Link href="/flexbox/ex01" style={styles.link}>
-        <Text style={styles.linkText}>Ex01</Text>
-      </Link>
-      <Link href="/flexbox/ex02" style={styles.link}>
-        <Text style={styles.linkText}>Ex02</Text>
-      </Link>
-      <Link href="/flexbox/ex03" style={styles.link}>
-        <Text style={styles.linkText}>Ex03</Text>
-      </Link>
-      <Link href="/flexbox/ex04" style={styles.link}>
-        <Text style={styles.linkText}>Ex04</Text>
-      </Link>
-      <Link href="/flexbox/ex05" style={styles.link}>
-        <Text style={styles.linkText}>Ex05</Text>
-      </Link>
-      <Link href="/flexbox/ex06" style={styles.link}>
-        <Text style={styles.linkText}>Ex06</Text>
-      </Link>
-      <Text style={styles.title}>ข้อ 7 - 12</Text>
-       <Link href="/page2" style={styles.link}>
-        <Text style={styles.linkText}>ไปหน้าที่ 2</Text>
-      </Link>
-    </View>
+    <ScrollView style={{ flex: 1 }}>
+      <View style={styles.container}>
+        ...
+        <Text style={styles.title}>ข้อ 1 - 6</Text>
+        <Link href="/flexbox/ex01" style={styles.link}>
+          <Text style={styles.linkText}>Ex01</Text>
+        </Link>
+        <Link href="/flexbox/ex02" style={styles.link}>
+          <Text style={styles.linkText}>Ex02</Text>
+        </Link>
+        <Link href="/flexbox/ex03" style={styles.link}>
+          <Text style={styles.linkText}>Ex03</Text>
+        </Link>
+        <Link href="/flexbox/ex04" style={styles.link}>
+          <Text style={styles.linkText}>Ex04</Text>
+        </Link>
+        <Link href="/flexbox/ex05" style={styles.link}>
+          <Text style={styles.linkText}>Ex05</Text>
+        </Link>
+        <Link href="/flexbox/ex06" style={styles.link}>
+          <Text style={styles.linkText}>Ex06</Text>
+        </Link>
+        <Text style={styles.title}>ข้อ 7 - 12</Text>
+        <Link href="/page2" style={styles.link}>
+          <Text style={styles.linkText}>ไปหน้าที่ 2</Text>
+        </Link>
+        <Text style={styles.title}>Excercise</Text>
+        <Link href="/test-components" style={styles.link}>
+          <Text style={styles.linkText}>ไปหน้า components</Text>
+        </Link>
+        <Link href="/test-greeting" style={styles.link}>
+          <Text style={styles.linkText}>ไปหน้า greeting</Text>
+        </Link>
+        <Link href="/travel" style={styles.link}>
+          <Text style={styles.linkText}>ไปหน้า travel</Text>
+        </Link>
+        <Link href="/resort" style={styles.link}>
+          <Text style={styles.linkText}>ไปหน้า resort</Text>
+        </Link>
+      </View>
     </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: "center", alignItems: "center" },
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    margin: 40,
+  },
   link: {
     margin: 10,
     padding: 10,
@@ -43,7 +61,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   linkText: { color: "#fff", fontSize: 16, textAlign: "center" },
-   title: {
+  title: {
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 12,
